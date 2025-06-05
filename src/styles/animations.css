@@ -1,0 +1,27 @@
+/*Button styles */
+.simple-button {
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px; /*for rounded corners*/
+  font-size: 1rem;
+}
+
+.simple-button:hover {
+  background: #075487; /*background becomes darker on hover*/
+}
+
+/* Card hover animation */
+.card {
+  perspective: 1000px;
+}
+
+.card-content {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-content {
+  transform: rotateY(10deg);
+}
